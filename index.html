@@ -9,10 +9,45 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <style>@font-face { font-family: 'Shilla_CultureB-Bold'; src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/Shilla_CultureB-Bold.woff2') format('woff2'); font-weight: bold; font-style: normal; }</style>
 </head>
 <body>
-    <div class="bg-violet-950">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- 보라색 헤더 테마 -->
+    <div class="bg-violet-950 p-4">
+        <!-- 헤더 카테고리(타이틀/메뉴) -->
+        <div class="flex justify-between">
+            <p style="font-family: 'Shilla_CultureB-Bold';" class="text-white text-3xl">베리향기</p>
+            <!-- 메뉴 모음 -->
+            <div class="flex text-white text-1xl items-center justify-center">
+                <a class="ml-2" href="#">정보</a>
+                <a class="ml-2" href="#">상품정보</a>
+                <a class="ml-2" href="#">문의사항</a>
+            </div>
+        </div>   
     </div>
+
+    <!-- 오시는 길 -->
+    <div class="bg-violet-300">
+        <div class="text-black p-2 pl-3">
+            오시는 길 : 충남 공주시 정안면 고성리 462-5<br>
+            전화 번호 : 010-3030-7145
+        </div>
+    </div>
+
+    <!-- 블루베리 소개 -->
+    <div class="grid place-content-center text-center">
+        <p style="font-family: 'Shilla_CultureB-Bold';" class="text-violet-950 text-4xl mt-7">베리향기 블루베리</p>
+        <p style="font-family: 'Shilla_CultureB-Bold';" class="text-violet-950 text-xl mt-3">타임즈가 선정한 '10대 슈퍼푸드'</p>
+        <p style="font-family: 'Shilla_CultureB-Bold';" class="text-violet-950 text-xl">신선한 생과일, 자연의 달콤함을 한 입에!</p>
+    </div>
+
+    <!-- 농장 사진 -->
+    <div class="grid place-content-center mt-4">
+        <div class="relative w-80 h-52">
+            <img src="./photo/berry_house.jpg" alt="블루베리농장" class="w-full h-full object-cover rounded-lg border-solid border-2 border-violet-500">
+        </div>
+        <a href="#"><button class="bg-violet-500 rounded text-2xl text-white font-bold h-14 w-full mt-3">구매하기</button></a>
+    </div>
+    
 </body>
 </html>
